@@ -584,6 +584,8 @@ body {
         margin-left: auto;
         color: #fff;
         font-family: "KoHo Regular";
+        display: flex;
+        flex-direction: column;
     }
 
     .contact__cont h3 { 
@@ -613,9 +615,108 @@ body {
     input::placeholder {
         color: white; 
     }
+
+    .contact__btn { 
+        margin-left: auto;
+    }
+
+    .contact__btn button { 
+        border: 1px solid #fff;
+        border-radius: 10px 0px 10px 0px;
+        font-family: "KoHo Bold";
+        padding: 5px 20px;
+        position: relative;
+        overflow: hidden;
+        border: 1px solid #fff;
+        background-color: transparent;
+        z-index: 2;
+    }
+
+    .contact__btn button::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        background: var(--hover-blue);
+        box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+        z-index: -1;
+        border-radius: 50%;
+        transition: all 0.4s ease;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+    }
+    
+    .contact__btn button:hover::before {
+        width: 300px;
+        height: 300px;
+        top: 0px;
+        left: 0px;
+    }
 }
 
+@media screen and (max-width:709px) {
+    .contact__form { 
+        background-image: url('../assets/img/contact__back__mob.svg');
+        background-size: cover;
+        border-radius: 25px;
+        display: flex;
+        padding: 15px 40px 25px 10px;
+    }
 
+    .contact__cont { 
+        margin-left: auto;
+        color: #fff;
+        font-family: "KoHo Regular";
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact__cont h3 { 
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .contact__subtitle { 
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .contact__input { 
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        color: #fff;
+        border: 2px solid #fff;
+        border-radius: 15px;
+        box-shadow: 0px 0px 2px rgba(0,0,0,.5);
+        padding: 10px;
+        min-width: 270px;
+        margin-bottom: 10px;
+    }
+
+    input::placeholder {
+        color: white; 
+    }
+
+    .contact__btn { 
+        margin-left: auto;
+    }
+
+    .contact__btn button { 
+        border: 1px solid #fff;
+        border-radius: 10px 0px 10px 0px;
+        font-family: "KoHo Bold";
+        padding: 5px 20px;
+        position: relative;
+        overflow: hidden;
+        border: 1px solid #fff;
+        background-color: transparent;
+        z-index: 2;
+    }
+}
 
 
 
