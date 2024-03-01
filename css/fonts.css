@@ -1,0 +1,106 @@
+/* KOHO */
+
+@font-face {
+    font-family: 'KoHo Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('KoHo Regular'), url('../assets/fonts/KoHo/KoHo-Regular.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'KoHo Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('KoHo Italic'), url('../assets/fonts/KoHo/KoHo-Italic.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'KoHo Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('KoHo Bold'), url('../assets/fonts/KoHo/KoHo-Bold.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'KoHo Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('KoHo Bold Italic'), url('../assets/fonts/KoHo/KoHo-BoldItalic.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'KoHo ExtraLight Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('KoHo ExtraLight Regular'), url('../assets/fonts/KoHo/KoHo-ExtraLight.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'KoHo Light Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('KoHo Light Regular'), url('../assets/fonts/KoHo/KoHo-Light.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'KoHo Medium Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('KoHo Medium Regular'), url('../assets/fonts/KoHo/KoHo-Medium.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'KoHo SemiBold Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('KoHo SemiBold Regular'), url('../assets/fonts/KoHo/KoHo-SemiBold.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'KoHo ExtraLight Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('KoHo ExtraLight Italic'), url('../assets/fonts/KoHo/KoHo-ExtraLightItalic.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'KoHo Light Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('KoHo Light Italic'), url('../assets/fonts/KoHo/KoHo-LightItalic.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'KoHo Medium Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('KoHo Medium Italic'), url('../assets/fonts/KoHo/KoHo-MediumItalic.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'KoHo SemiBold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('KoHo SemiBold Italic'), url('../assets/fonts/KoHo/KoHo-SemiBoldItalic.woff') format('woff');
+}
+
+/* KOKORO */
+
+@font-face {
+    font-family: 'Kokoro';
+    src:url('../assets/fonts/Kokoro/Kokoro.ttf.woff') format('woff'),
+        url('../assets/fonts/Kokoro/Kokoro.ttf.eot') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
