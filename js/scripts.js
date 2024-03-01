@@ -10,4 +10,6 @@ $(document).ready(function() {
     $('.serv__card__btn').mouseleave(function() {
         $(this).css('background-image', 'none');
     });
+
+    $('#phoneInput').inputmask('+7 (999) 999-99-99');
 });

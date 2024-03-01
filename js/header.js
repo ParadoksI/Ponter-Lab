@@ -10,10 +10,10 @@ $(document).ready(function () {
                 $('.header__button').html('&#9776;');
             }
         });
-    } else { 
+    } else {
         $('#toggleBtn').on('click', function () {
-            $('.header__list').slideToggle(500, function() {
-                
+            $('.header__list').slideToggle(500, function () {
+
             }).css('display', 'flex');
         });
     }
