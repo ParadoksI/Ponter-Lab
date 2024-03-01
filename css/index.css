@@ -1,3 +1,9 @@
+:root { 
+    --main-blue : #0E2E57;
+    --sec-blue : #0085FF;
+    --hover-blue: #48a0f3;
+}
+
 body {
     background-color: #F1F1F1;
 }
@@ -15,7 +21,7 @@ body {
         justify-content: center;
         gap: 60px;
         padding: 0 160px;
-        max-width: 1000px;
+        max-width: 1200px;
         transition: transform 0.3s ease;
         transition-delay: 0.1s;
         
@@ -26,7 +32,7 @@ body {
     }
 
     .title {
-        font-family: "KoHo Regular";
+        font-family: "KoHo Bold";
         font-size: 30px;
         color: #0E2E57;
         text-transform: uppercase;
@@ -40,12 +46,20 @@ body {
 
 @media screen and (max-width:710px) {
     main {
-        margin: 95px 20px 0 20px;
+        margin: 95px 0px 0 0px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 60px;
         
+    }
+
+    .wrapper { 
+        
+        font-family: "KoHo Regular";
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
     }
 
     .title {
@@ -54,28 +68,36 @@ body {
         color: #0E2E57;
         text-transform: uppercase;
         margin-bottom: 30px;
+        text-align: center;
         
+    }
+
+    .container { 
+        overflow: hidden;
+        margin: 0px 20px 0 20px;
     }
 
    
 }
 
 
-@media screen and (min-width:710px) {
+@media screen and (min-width:1000px) {
     .about__content {
         display: flex;
         justify-content: space-between;
+        gap: 60px;
     }
     
     .about__text-container {
         display: flex;
         flex-direction: column;
         gap: 30px;
-        margin-right: 60px;
-        font-family: "Kokoro";
-        font-size: 20px;
-        text-transform: uppercase;
-        max-width: 400px;
+        
+        max-width: 470px;
+        font-size: 18px;
+        width: 100%;
+       
+        font-family: "KoHo Regular";
     }
     
     .about__img-container {
@@ -101,7 +123,7 @@ body {
         display: flex;
         flex-direction: column;
         gap: 30px;
-        font-family: "Kokoro";
+        font-family: "KoHo Regular";
         font-size: 20px;
         text-transform: uppercase;
         width: 100%;
@@ -117,6 +139,227 @@ body {
     }
 }
 
+@media screen and (min-width:710px) {
+    .serv__list { 
+        display: flex;
+        justify-content: space-between;
+        font-family: "KoHo Regular";
+        gap: 10px;
+    }
+
+    .serv__card { 
+        border-radius: 20px;
+        background-color: #fff;
+        box-shadow: 0px 0px 5px #000000;
+        padding: 15px;
+        min-width: 240px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .serv__card__title { 
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        font-family: 'KoHo Bold';
+        width: 100%;
+    }
+
+    .serv__card__name { 
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    .serv__card__price { 
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
+    .serv__card__disc { 
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 65px;
+    }
+
+    .serv__card__disc__point { 
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 20px;
+    }
+
+    .serv__card__text { 
+        font-size: 10px;
+        text-transform: uppercase;
+        max-width: 180px;
+        
+    }
+
+    .serv__card__btn { 
+        background-color: var(--main-blue);
+        border-radius: 50px;
+        color: #fff;
+        font-size: 12px;
+        text-transform: uppercase;
+        min-width: 100px;
+        padding: 5px 0px;
+        margin-left: auto;
+        transition: background-color 0.3s ease;
+    }
+    
+    .serv__card__btn:hover { 
+        background-color: #0085FF;
+    }
+
+    .service__more { 
+        font-family: "KoHo Regular";
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .service__more button{ 
+        text-decoration: underline;
+        margin-left: auto;
+        padding: 2px;
+        
+    }
+
+    .service__more button:hover { 
+        color: var(--main-blue);
+    }
+}
+
+@media screen and (max-width:709px) {
+    .service__container { 
+        overflow: visible;
+        margin: 0px 0px 0px 0px;
+    }
+
+    .service__title { 
+        padding-left: 20px;
+    }
+
+    .serv__list { 
+        display: flex;
+        font-family: "KoHo Regular";
+
+        
+    }
+
+    .serv__list .slick-track { 
+        display: flex;
+        gap: 25px;
+        padding: 10px 0px;
+        
+    }
+
+    .serv__list .slick-slide { 
+        scale: 0.9;
+        filter: blur(2px);
+        transition: all 0.3s ease;
+    }
+
+    .serv__list .slick-slide.slick-active.slick-center { 
+        scale: 1;
+        filter: none;
+    }
+
+    .serv__card { 
+        border-radius: 20px;
+        background-color: #fff;
+        box-shadow: 0px 0px 5px #000000;
+        padding: 15px 20px;
+        min-width: 218px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .serv__card__title { 
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        font-family: 'KoHo Bold';
+        width: 100%;
+    }
+
+    .serv__card__name { 
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+
+    .serv__card__price { 
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    .serv__card__disc { 
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 24px;
+    }
+
+    .serv__card__disc__point { 
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 20px;
+    }
+
+    .serv__card__text { 
+        font-size: 11px;
+        text-transform: uppercase;
+        
+        
+    }
+
+    .serv__card__btn__cont { 
+        display: flex;
+        
+    }
+
+    .serv__card__btn { 
+        background-color: var(--main-blue);
+        border-radius: 50px;
+        color: #fff;
+        font-size: 12px;
+        text-transform: uppercase;
+        min-width: 100px;
+        padding: 5px 0px;
+        margin-left: auto;
+        transition: background-color 0.3s ease;
+        margin: 0 auto;
+    }
+    
+    .serv__card__btn:hover { 
+        background-color: #0085FF;
+    }
+
+    .service__more { 
+        font-family: "KoHo Regular";
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+
+    .service__more button{ 
+        background-color: var(--main-blue);
+        color: #fff;
+        border-radius: 15px;
+        margin: 0 auto;
+        padding: 5px 10px;
+        
+    }
+
+    .service__more button:hover { 
+        color: var(--main-blue);
+    }
+}
 
 
 

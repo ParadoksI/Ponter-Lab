@@ -5,25 +5,25 @@
         flex-direction: column;
         gap: 16px;
     }
-    
-    
+
+
     .welcome__title {
-        font-family: "KoHo Regular";
+        font-family: "KoHo Bold";
         font-size: 30px;
-        color: transparent;    
+        color: transparent;
         -webkit-background-clip: text;
         background-clip: text;
-        background-image: linear-gradient(to right,#070E33,#7DC2C2);
+        background-image: linear-gradient(to right, #070E33, #7DC2C2);
         text-transform: uppercase
     }
-    
+
     .welcome__text {
-        font-family: 'Kokoro';
+        font-family: "KoHo Regular";
         font-size: 20px;
         color: #222222;
         text-transform: uppercase
     }
-    
+
     .welcome__img-container {
         background-color: #D9D9D9;
         width: 100%;
@@ -41,25 +41,25 @@
         flex-direction: column;
         gap: 16px;
     }
-    
-    
+
+
     .welcome__title {
         font-family: "KoHo Regular";
         font-size: 30px;
-        color: transparent;    
+        color: transparent;
         -webkit-background-clip: text;
         background-clip: text;
-        background-image: linear-gradient(to right,#070E33,#7DC2C2);
+        background-image: linear-gradient(to right, #070E33, #7DC2C2);
         text-transform: uppercase
     }
-    
+
     .welcome__text {
-        font-family: 'Kokoro';
+        font-family: "KoHo Regular";
         font-size: 20px;
         color: #222222;
         text-transform: uppercase
     }
-    
+
     .welcome__img-container {
         background-color: #D9D9D9;
         width: 100%;
@@ -68,7 +68,3 @@
         border-radius: 20px;
     }
 }
-
-
-
-
