@@ -38,9 +38,9 @@ $(document).ready(function () {
             $('#header').toggleClass('active');
             $('.header__button').toggleClass('active');
             if ($('.header__button').hasClass('active')) {
-                $('.header__button').html('&#10006;');
+                // $('.header__button').html('&#10006;'); X
             } else {
-                $('.header__button').html('&#9776;');
+                // $('.header__button').html('&#9776;'); 3
             }
         });
     } else {
@@ -48,6 +48,7 @@ $(document).ready(function () {
             $('.header__list').slideToggle(500, function () {
 
             }).css('display', 'flex');
+            $('.header__button').toggleClass('active');
         });
     }
 });

@@ -27,19 +27,23 @@
         <div class="aside">
             <div class="panel">
                 <div class="header__button-container">
-                    <button id="toggleBtn" class="header__button">&#9776;</button>
+                    <button id="toggleBtn" class="header__button">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </button>
                 </div>
             </div>
             <header id="header" class="header closed">
                 <div class="header__container">
                     <img class="header__logo" src="./assets/img/logo.svg" alt="Pointer Labs">
                     <ul class="header__list">
-                        <li class="header__item">Welcome</li>
-                        <li class="header__item">About Us</li>
-                        <li class="header__item">Services</li>
-                        <li class="header__item">Portfolio</li>
-                        <li class="header__item">Benefits</li>
-                        <li class="header__item">Contact Us</li>
+                        <li ><a href="#Title" class="header__item active" data-section="Title">Welcome</a></li>
+                        <li ><a href="#About" class="header__item" data-section="About">About Us</a></li>
+                        <li><a href="#Serv" class="header__item" data-section="Serv">Services</a></li>
+                        <li><a href="#Port" class="header__item" data-section="Port">Portfolio</a></li>
+                        <li><a href="#Benef" class="header__item" data-section="Benef">Benefits</a></li>
+                        <li><a href="#Cont" class="header__item" data-section="Cont">Contact Us</a></li>
                     </ul>
                     <a class="header__telephone-number" href="">+1 111 222 33 42</a>
                 </div>
@@ -50,19 +54,17 @@
 
 
             <div class="wrapper">
-                <section id="section" class="section welcome">
+                <section id="Title" class="section welcome">
                     <div class="container welcome__container">
                         <h1 class="welcome__title">Pointer labs - prototype, build, create!</h1>
                         <p class="welcome__text">Bourne Inc. It isn’t your typical company; we dream big, break rules,
                             and
                             push the boundaries of
                             what’s possible. Want to join the revolution?</p>
-                        <div class="welcome__img-container">
-                            <img class="welcome__img" src="" alt="">
-                        </div>
+                        
                     </div>
                 </section>
-                <section id="section" class="section about">
+                <section id="About" class="section about">
                     <div class="container about__conteiner ">
                         <h1 class="about__title title">About US</h1>
                         <div class="about__content">
@@ -82,7 +84,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="section services">
+                <section id="Serv" class="section services">
                     <div class="container service__container">
                         <h1 class="title service__title">services</h1>
                         <div class="serv__list">
@@ -209,7 +211,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="section gallery">
+                <section id="Port" class="section gallery">
                     <div class="container gallery__container">
                         <h1 class="title">PORTFOLIO</h1>
                         <div class="gallery__content">
@@ -288,7 +290,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="section benefits">
+                <section id="Benef" class="section benefits">
                     <div class="container">
                         <h1 class="title">benefits</h1>
                         <div class="benefits__list">
@@ -352,7 +354,7 @@
 
                     </div>
                 </section>
-                <section class="section contact">
+                <section id="Cont" class="section contact">
                     <div class="container">
                         <h1 class="title">Contact us</h1>
                         <div class="contact__form">
@@ -441,6 +443,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
 
         <script src="./js/header.js"></script>
+        <script src="./js/nav.js"></script>
         <script src="./js/scripts.js"></script>
         <script src="./js/slider.js"></script>
         <script src="./js/portfolio.js"></script>
