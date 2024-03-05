@@ -43,5 +43,5 @@ $(document).ready(function () {
         $(this).css('background-image', 'none');
     });
 
-    $('#phoneInput').inputmask('+7 (999) 999-99-99');
+    // $('#phoneInput').inputmask('+7 (999) 999-99-99');
 });

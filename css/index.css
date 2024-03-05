@@ -793,6 +793,12 @@ body {
         align-items: center;
         font-size: 20px;
     }
+
+    .iti__country-list { 
+        background-color:var(--main-blue);
+        z-index: 1000;
+        left: -40px;
+    }
 }
 
 @media screen and (max-width: 709px) {
