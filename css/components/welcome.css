@@ -2,16 +2,22 @@
     .welcome { 
         width: 100vw;
         max-width: 100vw;
+        height: auto;
         padding: 0px;
-        background-image: url("https://via.placeholder.com/880X383");
+        background-image: url("/assets/img/title__back.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
     }
+
     
     .welcome__container {
         text-align: center;
         display: flex;
         flex-direction: column;
         gap: 16px;
-        padding: 190px 160px 190px 160px;
+        padding: 300px 160px 300px 160px;
         margin: 0 auto;
         max-width: 1200px;
     }
@@ -19,12 +25,13 @@
 
     .welcome__title {
         font-family: "KoHo Bold";
-        font-size: 35px;
+        font-size: 40px;
+        text-shadow: 1px 1px 1px rgba(0,0,0,.1);
         
         color: transparent;
         -webkit-background-clip: text;
         background-clip: text;
-        background-image: linear-gradient(to right, #070E33, #7DC2C2);
+        background-image: linear-gradient(to right, #ffffff, #a9ecec);
         text-transform: uppercase
     }
 
