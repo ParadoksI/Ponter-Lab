@@ -1,9 +1,10 @@
 @media screen and (min-width:710px) {
     .header {
         position: fixed;
+        z-index: 599;
         top: 0;
-        left: -200px;
-        width: 200px;
+        left: -250px;
+        width: 250px;
         height: 100%;
         box-shadow: 0 30%;
         background-color: #ffffff;
@@ -22,6 +23,9 @@
 
     .header__container {
         padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .header__logo {
@@ -40,7 +44,7 @@
     }
 
     .header__item {
-        font-family: "Koho";
+        font-family: "KoHo Regular";
         font-size: 20px;
         color: #000000;
         cursor: pointer;
@@ -49,7 +53,7 @@
     }
 
     .header__item:hover {
-        box-shadow: inset 100px 0 0 0 #0E2E57;
+        background-color: #0E2E57;
         color: white;
     }
 
@@ -59,11 +63,12 @@
 
     .header__telephone-number {
         display: flex;
-        font-family: "Koho";
+        font-family: "KoHo Regular";
         font-size: 20px;
-        margin-top: 30px;
+        margin: 30px auto 0 auto;
         text-decoration: none;
         color: #222222;
+        
     }
 
     
@@ -88,10 +93,11 @@
         position: relative;
         transform: translateX(18px);
         transition: all 0.3s ease;
+        
     }
 
     .header__button.active {
-        left: -10px;
+        left: 50px;
         transform: translateX(-10px);
     }
 
@@ -194,7 +200,7 @@
     }
 
     .header__item {
-        font-family: "Koho";
+        font-family: "KoHo Regular";
         font-size: 20px;
         color: #000000;
         cursor: pointer;
@@ -207,7 +213,7 @@
 
     .header__telephone-number {
         display: none;
-        font-family: "Koho";
+        font-family: "KoHo Regular";
         font-size: 20px;
         margin-top: 30px;
         text-decoration: none;
@@ -232,7 +238,7 @@
         font-size: 30px;
         cursor: pointer;
         position: relative;
-        top: -78px;
+        top: 19px;
         left: 85vw;
         z-index: 999;
         
