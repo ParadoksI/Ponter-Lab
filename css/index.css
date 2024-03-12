@@ -114,10 +114,16 @@ body {
 
     .about__img-container {
         display: flex;
-        background-color: #D9D9D9;
+        
 
         width: 100%;
         height: 250px;
+        border-radius: 20px;
+    }
+
+    .about__img-container img { 
+        width: 100%;
+        height: 100%;
         border-radius: 20px;
     }
 }
@@ -150,10 +156,14 @@ body {
 
     .about__img-container {
         display: flex;
-        background-color: #D9D9D9;
+        
 
         width: 100%;
-        height: 200px;
+        
+        border-radius: 20px;
+    }
+
+    .about__img-container img { 
         border-radius: 20px;
     }
 }
@@ -205,15 +215,15 @@ body {
         grid-template-columns: repeat(1, 1fr);
         flex-direction: column;
         
-        margin-bottom: 65px;
+        margin-bottom: 45px;
     }
 
     .serv__card__disc__point {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         gap: 8px;
         margin-top: 20px;
-        height: 49px;
+        
     }
 
     .serv__card__text {
@@ -240,6 +250,12 @@ body {
         margin-left: auto;
         transition: background-color 0.3s ease;
        
+    }
+
+    .serv__card__btn a  { 
+        color: #fff;
+        width: 100%;
+        height: 100%;
     }
 
     
@@ -355,7 +371,7 @@ body {
         align-items: center;
         gap: 8px;
         margin-top: 20px;
-        height: 49px;
+        
     }
 
     .serv__card__text {
@@ -383,9 +399,7 @@ body {
         margin: 0 auto;
     }
 
-    .serv__card__btn:hover {
-        background-color: #0085FF;
-    }
+    
 
     .service__more {
         font-family: "KoHo Regular";
@@ -505,7 +519,7 @@ body {
         box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
         overflow: hidden;
         border-radius: 50%;
-        
+        padding: 1.5px;
     }
 
     .gallery__slider .prev-arrow { 
@@ -563,7 +577,7 @@ body {
     .gallery__item__disc {
         display: none;
         font-family: "KoHo Regular";
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .gallery__slider__container {
@@ -623,7 +637,7 @@ body {
         box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
         overflow: hidden;
         border-radius: 50%;
-        
+        padding: 1.5px;
     }
 
     .gallery__slider .prev-arrow { 
@@ -695,7 +709,7 @@ body {
 
     .benefits__title {
         position: relative;
-        font-size: 15px;
+        font-size: 17px;
         font-family: "KoHo Bold";
         display: flex;
         justify-content: space-between;
@@ -712,7 +726,7 @@ body {
     }
 
     .benefits__disc {
-        font-size: 12px;
+        font-size: 15px;
     }
 }
 
@@ -781,7 +795,7 @@ body {
         margin-left: auto;
     }
 
-    .contact__btn button {
+    .contact__btn {
         border: 1px solid #fff;
         border-radius: 10px 0px 10px 0px;
         font-family: "KoHo Bold";
@@ -793,7 +807,10 @@ body {
         z-index: 2;
     }
 
-
+    .form-contact { 
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width:999px) {
@@ -855,7 +872,7 @@ body {
         margin-left: auto;
     }
 
-    .contact__btn button {
+    .contact__btn {
         border: 1px solid #fff;
         border-radius: 10px 0px 10px 0px;
         font-family: "KoHo Bold";
@@ -870,6 +887,11 @@ body {
     .iti { 
         display: flex;
         align-items: center;
+    }
+
+    .form-contact { 
+        display: flex;
+        flex-direction: column;
     }
 }
 

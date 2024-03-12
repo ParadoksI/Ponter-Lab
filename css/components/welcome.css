@@ -2,7 +2,7 @@
     .welcome { 
         width: 100vw;
         max-width: 100vw;
-        height: auto;
+        height: 100vh;
         padding: 0px;
         background-image: url("/assets/img/title__back.jpg");
         background-repeat: no-repeat;
@@ -13,34 +13,66 @@
 
     
     .welcome__container {
-        text-align: center;
+        text-align: left;
         display: flex;
         flex-direction: column;
+        height: 100%;
         gap: 16px;
-        padding: 300px 160px 300px 160px;
+        padding: 60px 160px 40px 160px;
         margin: 0 auto;
         max-width: 1200px;
+        position: relative;
     }
 
 
     .welcome__title {
         font-family: "KoHo Bold";
-        font-size: 40px;
-        text-shadow: 1px 1px 1px rgba(0,0,0,.1);
+        font-size: 65px;
+        z-index: 199;
+        width: 100vw;
+        color: #fff;
         
-        color: transparent;
-        -webkit-background-clip: text;
-        background-clip: text;
-        background-image: linear-gradient(to right, #ffffff, #a9ecec);
         text-transform: uppercase
+    }
+
+    .welcome__title::before { 
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: -50%;
+        width: calc(100vw + 100%);
+        height: 45vh;
+        background: linear-gradient(to bottom, rgba(0,0,0,.85), rgba(0,0,0,0));
+        z-index: -1;
+    }
+
+    .welcome__title::after { 
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: -50%;
+        width: calc(100vw + 100%);
+        height: 30vh;
+        background: linear-gradient(to top, rgba(0,0,0,.85), rgba(0,0,0,0));
+        z-index: -1;
     }
 
     .welcome__text {
         font-family: "KoHo Regular";
         font-size: 20px;
         color: #ffffff;
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+        z-index: 199;
         text-transform: uppercase
+    }
+
+    .welcome__text__sub { 
+        font-size: 40px;
+        margin-top: -20px;
+    }
+
+    .welcome__text__foot { 
+        margin-top: auto;
+        text-align: right;
     }
 
     .welcome__img-container {
@@ -56,37 +88,73 @@
 
 @media screen and (max-width:710px) {
     .welcome { 
-        padding-top: 100px;
-        background-image: url("https://via.placeholder.com/353X383");
+        
+        background-image: url("../assets/img/title__back.jpg");
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
     
     .welcome__container {
-        text-align: center;
+        text-align: left;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         gap: 16px;
-        padding: 20px 20px 60px 20px;
-        
-        border-radius: 20px;
+        padding: 120px 40px calc(60px - 0.5em) 40px;
+        position: relative;
+        margin: 0;
     }
 
 
     .welcome__title {
-        font-family: "KoHo Regular";
-        font-size: 30px;
-        color: transparent;
-        -webkit-background-clip: text;
-        background-clip: text;
-        background-image: linear-gradient(to right, #070E33, #7DC2C2);
-        text-transform: uppercase
+        font-family: "KoHo Bold";
+        font-size: 40px;
+        z-index: 199;
+        width: 100vw;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    .welcome__title::before { 
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: -50vw;
+        width: calc(100vw + 50vw);
+        height: 50vh;
+        background: linear-gradient(to bottom, rgba(0,0,0,.85), rgba(0,0,0,0));
+        z-index: -1;
+    }
+
+    .welcome__title::after { 
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: -50%;
+        width: calc(100vw + 50%);
+        height: 50vh;
+        background: linear-gradient(to top, rgba(0,0,0,.85), rgba(0,0,0,0));
+        z-index: -1;
     }
 
     .welcome__text {
         font-family: "KoHo Regular";
         font-size: 20px;
         color: #ffffff;
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+        z-index: 199;
         text-transform: uppercase
+    }
+    
+    .welcome__text__sub { 
+        margin-top: -10px;
+    }
+
+    .welcome__text__foot { 
+        margin-top: auto;
+        text-align: right;
+        width: 100%;
     }
 
     .welcome__img-container {
