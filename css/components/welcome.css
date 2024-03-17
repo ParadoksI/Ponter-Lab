@@ -89,7 +89,7 @@
 @media screen and (max-width:710px) {
     .welcome { 
         
-        background-image: url("../assets/img/title__back.jpg");
+        background-image: url("/assets/img/title__back.jpg");
         
         background-repeat: no-repeat;
         background-size: cover;
