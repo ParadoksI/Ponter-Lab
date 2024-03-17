@@ -57,4 +57,23 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
+
+    var countryCodeInput = document.getElementById('countryCodeInput');
+
+    // Получаем все элементы с классом iti__selected-dial-code
+    var selectedDialCodes = document.getElementsByClassName('iti__selected-dial-code');
+
+    // Перебираем найденные элементы
+    for (var i = 0; i < selectedDialCodes.length; i++) {
+        // Добавляем обработчик события на каждый найденный элемент
+        selectedDialCodes[i].addEventListener('click', function () {
+            // Получаем значение выбранного кода страны
+            var countryCode = this.textContent.trim();
+
+            // Устанавливаем значение выбранного кода страны в скрытое поле
+            countryCodeInput.value = countryCode;
+        });
+    }
+
+   
 });
